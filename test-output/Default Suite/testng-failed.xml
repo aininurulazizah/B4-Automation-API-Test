@@ -9,9 +9,6 @@
           <include name="TC19UpdatefirstNameKurangDari2Karakter"/>
           <include name="TC04UpdateIDUserTidakValid"/>
           <include name="TC52CreateTimezoneInvalid"/>
-          <include name="TC8CreateAllFieldsValid"/>
-          <include name="TC3DeleteValidUserID"/>
-          <include name="TC3CreateValidRequiredFieldOnly"/>
         </methods>
       </class> <!-- APITest -->
     </classes>

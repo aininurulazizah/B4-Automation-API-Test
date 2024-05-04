@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods, 7 failed,   13 passed</span>
+                    <span class="method-stats">20 methods, 4 failed,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -118,22 +118,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC3CreateValidRequiredFieldOnly">TC3CreateValidRequiredFieldOnly</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC3DeleteValidUserID">TC3DeleteValidUserID</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC52CreateTimezoneInvalid">TC52CreateTimezoneInvalid</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC8CreateAllFieldsValid">TC8CreateAllFieldsValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_Suite -->
@@ -168,6 +153,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC2InvalidAuthorization">TC2InvalidAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC3CreateValidRequiredFieldOnly">TC3CreateValidRequiredFieldOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC3DeleteValidUserID">TC3DeleteValidUserID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -208,6 +203,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC7DeleteEmptyUserID">TC7DeleteEmptyUserID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="APITest" class="method navigator-link" hash-for-method="TC8CreateAllFieldsValid">TC8CreateAllFieldsValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -325,34 +325,6 @@ error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC3CreateValidRequiredFieldOnly">
-                  </a> <!-- TC3CreateValidRequiredFieldOnly -->
-                  <span class="method-name">TC3CreateValidRequiredFieldOnly</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
-	at APITest.TC3CreateValidRequiredFieldOnly(APITest.java:151)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC3DeleteValidUserID">
-                  </a> <!-- TC3DeleteValidUserID -->
-                  <span class="method-name">TC3DeleteValidUserID</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
-	at APITest.TC3DeleteValidUserID(APITest.java:493)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC52CreateTimezoneInvalid">
                   </a> <!-- TC52CreateTimezoneInvalid -->
                   <span class="method-name">TC52CreateTimezoneInvalid</span>
@@ -362,20 +334,6 @@ error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 ... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC8CreateAllFieldsValid">
-                  </a> <!-- TC8CreateAllFieldsValid -->
-                  <span class="method-name">TC8CreateAllFieldsValid</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
-	at APITest.TC8CreateAllFieldsValid(APITest.java:218)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -420,6 +378,20 @@ error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
                   <a name="TC2InvalidAuthorization">
                   </a> <!-- TC2InvalidAuthorization -->
                   <span class="method-name">TC2InvalidAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3CreateValidRequiredFieldOnly">
+                  </a> <!-- TC3CreateValidRequiredFieldOnly -->
+                  <span class="method-name">TC3CreateValidRequiredFieldOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3DeleteValidUserID">
+                  </a> <!-- TC3DeleteValidUserID -->
+                  <span class="method-name">TC3DeleteValidUserID</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -476,6 +448,13 @@ error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
                   <a name="TC7DeleteEmptyUserID">
                   </a> <!-- TC7DeleteEmptyUserID -->
                   <span class="method-name">TC7DeleteEmptyUserID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC8CreateAllFieldsValid">
+                  </a> <!-- TC8CreateAllFieldsValid -->
+                  <span class="method-name">TC8CreateAllFieldsValid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -536,88 +515,88 @@ data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC04UpdateIDUserTidakValid')
 data.setCell(0, 2, 'APITest')
-data.setCell(0, 3, 4958);
+data.setCell(0, 3, 3685);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC06UpdatefirstNameValid')
 data.setCell(1, 2, 'APITest')
-data.setCell(1, 3, 3119);
+data.setCell(1, 3, 2416);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC8CreateAllFieldsValid')
+data.setCell(2, 1, 'TC52CreateTimezoneInvalid')
 data.setCell(2, 2, 'APITest')
-data.setCell(2, 3, 1765);
+data.setCell(2, 3, 878);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC6GETNonExistUserID')
+data.setCell(3, 1, 'TC1UnauthorizedGET')
 data.setCell(3, 2, 'APITest')
-data.setCell(3, 3, 1121);
+data.setCell(3, 3, 681);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC6DeleteNonExistUserID')
+data.setCell(4, 1, 'TC48UpdateemailKosong')
 data.setCell(4, 2, 'APITest')
-data.setCell(4, 3, 917);
+data.setCell(4, 3, 654);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC7DeleteEmptyUserID')
+data.setCell(5, 1, 'TC18UpdatefirstNameInvalid')
 data.setCell(5, 2, 'APITest')
-data.setCell(5, 3, 853);
+data.setCell(5, 3, 612);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC5DeleteInvalidFormatUserID')
+data.setCell(6, 1, 'TC19UpdatefirstNameKurangDari2Karakter')
 data.setCell(6, 2, 'APITest')
-data.setCell(6, 3, 776);
+data.setCell(6, 3, 602);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC18UpdatefirstNameInvalid')
+data.setCell(7, 1, 'TC5GETInvalidFormatUserID')
 data.setCell(7, 2, 'APITest')
-data.setCell(7, 3, 699);
+data.setCell(7, 3, 593);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC52CreateTimezoneInvalid')
+data.setCell(8, 1, 'TC14CreateWithExistingData')
 data.setCell(8, 2, 'APITest')
-data.setCell(8, 3, 646);
+data.setCell(8, 3, 543);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC3GetValidUserID')
+data.setCell(9, 1, 'TC7DeleteEmptyUserID')
 data.setCell(9, 2, 'APITest')
-data.setCell(9, 3, 631);
+data.setCell(9, 3, 532);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC48UpdateemailKosong')
+data.setCell(10, 1, 'TC3CreateValidRequiredFieldOnly')
 data.setCell(10, 2, 'APITest')
-data.setCell(10, 3, 626);
+data.setCell(10, 3, 527);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC2InvalidAuthorization')
+data.setCell(11, 1, 'TC3DeleteValidUserID')
 data.setCell(11, 2, 'APITest')
-data.setCell(11, 3, 621);
+data.setCell(11, 3, 525);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC19UpdatefirstNameKurangDari2Karakter')
+data.setCell(12, 1, 'TC3GetValidUserID')
 data.setCell(12, 2, 'APITest')
-data.setCell(12, 3, 616);
+data.setCell(12, 3, 513);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC14CreateWithExistingData')
+data.setCell(13, 1, 'TC8CreateAllFieldsValid')
 data.setCell(13, 2, 'APITest')
-data.setCell(13, 3, 588);
+data.setCell(13, 3, 503);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC3DeleteValidUserID')
+data.setCell(14, 1, 'TC2InvalidAuthorization')
 data.setCell(14, 2, 'APITest')
-data.setCell(14, 3, 556);
+data.setCell(14, 3, 484);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'TC5CreateFirstNameOnly')
 data.setCell(15, 2, 'APITest')
-data.setCell(15, 3, 535);
+data.setCell(15, 3, 457);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC3CreateValidRequiredFieldOnly')
+data.setCell(16, 1, 'TC6DeleteNonExistUserID')
 data.setCell(16, 2, 'APITest')
-data.setCell(16, 3, 531);
+data.setCell(16, 3, 456);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TC5GETInvalidFormatUserID')
+data.setCell(17, 1, 'TC5DeleteInvalidFormatUserID')
 data.setCell(17, 2, 'APITest')
-data.setCell(17, 3, 520);
+data.setCell(17, 3, 453);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'TC1UnauthorizedDelete')
 data.setCell(18, 2, 'APITest')
-data.setCell(18, 3, 498);
+data.setCell(18, 3, 392);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TC1UnauthorizedGET')
+data.setCell(19, 1, 'TC6GETNonExistUserID')
 data.setCell(19, 2, 'APITest')
-data.setCell(19, 3, 469);
+data.setCell(19, 3, 174);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -652,91 +631,85 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC06UpdatefirstNameValid</span>
-                <span class="method-start">4970 ms</span>
+                <span class="method-start">3701 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC14CreateWithExistingData</span>
-                <span class="method-start">8094 ms</span>
+                <span class="method-start">6121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC18UpdatefirstNameInvalid</span>
-                <span class="method-start">8686 ms</span>
+                <span class="method-start">6669 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC19UpdatefirstNameKurangDari2Karakter</span>
-                <span class="method-start">9401 ms</span>
+                <span class="method-start">7296 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC1UnauthorizedDelete</span>
-                <span class="method-start">10023 ms</span>
+                <span class="method-start">7903 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC1UnauthorizedGET</span>
-                <span class="method-start">10522 ms</span>
+                <span class="method-start">8297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC2InvalidAuthorization</span>
-                <span class="method-start">10993 ms</span>
+                <span class="method-start">8980 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC3CreateValidRequiredFieldOnly</span>
-                <span class="method-start">11616 ms</span>
+                <span class="method-start">9465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC3DeleteValidUserID</span>
-                <span class="method-start">12150 ms</span>
+                <span class="method-start">9993 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC3GetValidUserID</span>
-                <span class="method-start">12709 ms</span>
+                <span class="method-start">10519 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC48UpdateemailKosong</span>
-                <span class="method-start">13341 ms</span>
+                <span class="method-start">11033 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC52CreateTimezoneInvalid</span>
-                <span class="method-start">13969 ms</span>
+                <span class="method-start">11690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC5CreateFirstNameOnly</span>
-                <span class="method-start">14617 ms</span>
+                <span class="method-start">12577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC5DeleteInvalidFormatUserID</span>
-                <span class="method-start">15155 ms</span>
+                <span class="method-start">13038 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC5GETInvalidFormatUserID</span>
-                <span class="method-start">15933 ms</span>
+                <span class="method-start">13498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC6DeleteNonExistUserID</span>
-                <span class="method-start">16458 ms</span>
+                <span class="method-start">14093 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC6GETNonExistUserID</span>
-                <span class="method-start">17377 ms</span>
+                <span class="method-start">14550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC7DeleteEmptyUserID</span>
-                <span class="method-start">18501 ms</span>
+                <span class="method-start">14726 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC8CreateAllFieldsValid</span>
-                <span class="method-start">19356 ms</span>
+                <span class="method-start">15259 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

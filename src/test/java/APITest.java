@@ -134,7 +134,7 @@ public class APITest {
         request.header("app-id", "662715096cae038e24dee790");
         String requestBody = "{\"firstName\":\"Adipati\", " +
                 "\"lastName\":\"Dolken\", " +
-                "\"email\":\"adipati_dolken12345@gmail.com\"}";
+                "\"email\":\"adipati_dolken1234567@gmail.com\"}";
 
         // Send POST request
         Response response = request.body(requestBody).post("https://dummyapi.io/data/v1/user/create");
@@ -194,7 +194,7 @@ public class APITest {
                 "\"lastName\":\"Lee\", " +
                 "\"picture\":\"https://randomuser.me/api/portraits/men/61.jpg\", " +
                 "\"gender\":\"male\", " +
-                "\"email\":\"ten_lee12345@gmail.com\", " +
+                "\"email\":\"ten_lee1234567@gmail.com\", " +
                 "\"dateOfBirth\":\"1996-02-27\", " +
                 "\"phone\":\"+613372837823\", " +
                 "\"location\":{\"street\":\"Wutthakad Road\"," +
@@ -479,7 +479,7 @@ public class APITest {
 
         // Send request
         // !! ID User harus diganti dengan id user lain yang belum terhapus di database !!
-        Response response = request.delete("https://dummyapi.io/data/v1/user/60d0fe4f5311236168a10a06");
+        Response response = request.delete("https://dummyapi.io/data/v1/user/60d0fe4f5311236168a109de");
 
         // Get status code and response body
         int status_code = response.getStatusCode();
