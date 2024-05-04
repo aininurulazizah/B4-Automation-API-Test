@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>APIAutomationTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 04 09:20:32 ICT 2024</td>
+<td>Started on:</td><td>Sat May 04 21:27:01 ICT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7424 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16567 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='APITest.test1()'><b>test1</b><br>Test class: APITest</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
-	at APITest.test1(APITest.java:28)
+<td title='APITest.TC52CreateTimezoneInvalid()'><b>TC52CreateTimezoneInvalid</b><br>Test class: APITest</td>
+<td><div><pre>java.lang.AssertionError: expected [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;}] but found [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;,&quot;data&quot;:{&quot;email&quot;:&quot;Email already used&quot;}}]
+	at APITest.TC52CreateTimezoneInvalid(APITest.java:299)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454104863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace454104863'><pre>java.lang.AssertionError: expected [200] but found [404]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902348321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902348321'><pre>java.lang.AssertionError: expected [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;}] but found [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;,&quot;data&quot;:{&quot;email&quot;:&quot;Email already used&quot;}}]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at APITest.test1(APITest.java:28)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at APITest.TC52CreateTimezoneInvalid(APITest.java:299)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,8 +119,261 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
-<td>4</td>
-<td>APITest@117e949d</td></tr>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC04UpdateIDUserTidakValid()'><b>TC04UpdateIDUserTidakValid</b><br>Test class: APITest</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [400]
+	at APITest.TC04UpdateIDUserTidakValid(APITest.java:322)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205445235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1205445235'><pre>java.lang.AssertionError: expected [404] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at APITest.TC04UpdateIDUserTidakValid(APITest.java:322)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>3</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC19UpdatefirstNameKurangDari2Karakter()'><b>TC19UpdatefirstNameKurangDari2Karakter</b><br>Test class: APITest</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;minLength&quot;
+    value: &quot;a&quot;
+    found: 1
+    minLength: 2
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;a&quot;,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC19UpdatefirstNameKurangDari2Karakter(APITest.java:417)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968922416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1968922416'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;minLength&quot;
+    value: &quot;a&quot;
+    found: 1
+    minLength: 2
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;a&quot;,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC19UpdatefirstNameKurangDari2Karakter(APITest.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC18UpdatefirstNameInvalid()'><b>TC18UpdatefirstNameInvalid</b><br>Test class: APITest</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (integer) does not match any allowed primitive type (allowed: [&quot;string&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;type&quot;
+    found: &quot;integer&quot;
+    expected: [&quot;string&quot;]
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:123,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC18UpdatefirstNameInvalid(APITest.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace300526628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace300526628'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (integer) does not match any allowed primitive type (allowed: [&quot;string&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;type&quot;
+    found: &quot;integer&quot;
+    expected: [&quot;string&quot;]
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:123,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC18UpdatefirstNameInvalid(APITest.java:387)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,10 +384,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='APITest.test2()'><b>test2</b><br>Test class: APITest</td>
+<td title='APITest.TC14CreateWithExistingData()'><b>TC14CreateWithExistingData</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC5CreateFirstNameOnly()'><b>TC5CreateFirstNameOnly</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC6GETNonExistUserID()'><b>TC6GETNonExistUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC5GETInvalidFormatUserID()'><b>TC5GETInvalidFormatUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC7DeleteEmptyUserID()'><b>TC7DeleteEmptyUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC5DeleteInvalidFormatUserID()'><b>TC5DeleteInvalidFormatUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC3CreateValidRequiredFieldOnly()'><b>TC3CreateValidRequiredFieldOnly</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC2InvalidAuthorization()'><b>TC2InvalidAuthorization</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC6DeleteNonExistUserID()'><b>TC6DeleteNonExistUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC3DeleteValidUserID()'><b>TC3DeleteValidUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC48UpdateemailKosong()'><b>TC48UpdateemailKosong</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC06UpdatefirstNameValid()'><b>TC06UpdatefirstNameValid</b><br>Test class: APITest</td>
 <td></td>
 <td>2</td>
-<td>APITest@117e949d</td></tr>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC1UnauthorizedGET()'><b>TC1UnauthorizedGET</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC1UnauthorizedDelete()'><b>TC1UnauthorizedDelete</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC3GetValidUserID()'><b>TC3GetValidUserID</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
+<tr>
+<td title='APITest.TC8CreateAllFieldsValid()'><b>TC8CreateAllFieldsValid</b><br>Test class: APITest</td>
+<td></td>
+<td>0</td>
+<td>APITest@31f9b85e</td></tr>
 </table><p>
 </body>
 </html>

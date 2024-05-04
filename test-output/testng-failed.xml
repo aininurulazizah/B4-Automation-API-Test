@@ -5,7 +5,10 @@
     <classes>
       <class name="APITest">
         <methods>
-          <include name="test1"/>
+          <include name="TC18UpdatefirstNameInvalid"/>
+          <include name="TC19UpdatefirstNameKurangDari2Karakter"/>
+          <include name="TC52CreateTimezoneInvalid"/>
+          <include name="TC04UpdateIDUserTidakValid"/>
         </methods>
       </class> <!-- APITest -->
     </classes>

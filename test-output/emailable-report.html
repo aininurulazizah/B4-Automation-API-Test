@@ -9,16 +9,102 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default Suite</th></tr>
-<tr><td><a href="#t0">APIAutomationTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,424</td><td></td><td></td></tr>
+<tr><td><a href="#t0">APIAutomationTest</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">16,567</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">APIAutomationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">APITest</td><td><a href="#m0">test1</a></td><td rowspan="1">1714789232838</td><td rowspan="1">4367</td></tr><tr><th colspan="4">APIAutomationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">APITest</td><td><a href="#m1">test2</a></td><td rowspan="1">1714789237236</td><td rowspan="1">2890</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">APIAutomationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">APITest</td><td><a href="#m0">TC04UpdateIDUserTidakValid</a></td><td rowspan="1">1714832821144</td><td rowspan="1">3484</td></tr><tr class="failedeven"><td><a href="#m1">TC18UpdatefirstNameInvalid</a></td><td rowspan="1">1714832828206</td><td rowspan="1">748</td></tr><tr class="failedeven"><td><a href="#m2">TC19UpdatefirstNameKurangDari2Karakter</a></td><td rowspan="1">1714832828971</td><td rowspan="1">575</td></tr><tr class="failedeven"><td><a href="#m3">TC52CreateTimezoneInvalid</a></td><td rowspan="1">1714832833562</td><td rowspan="1">540</td></tr><tr><th colspan="4">APIAutomationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">APITest</td><td><a href="#m4">TC06UpdatefirstNameValid</a></td><td rowspan="1">1714832824643</td><td rowspan="1">2893</td></tr><tr class="passedeven"><td><a href="#m5">TC14CreateWithExistingData</a></td><td rowspan="1">1714832827541</td><td rowspan="1">664</td></tr><tr class="passedeven"><td><a href="#m6">TC1UnauthorizedDelete</a></td><td rowspan="1">1714832829554</td><td rowspan="1">505</td></tr><tr class="passedeven"><td><a href="#m7">TC1UnauthorizedGET</a></td><td rowspan="1">1714832830061</td><td rowspan="1">450</td></tr><tr class="passedeven"><td><a href="#m8">TC2InvalidAuthorization</a></td><td rowspan="1">1714832830512</td><td rowspan="1">711</td></tr><tr class="passedeven"><td><a href="#m9">TC3CreateValidRequiredFieldOnly</a></td><td rowspan="1">1714832831225</td><td rowspan="1">596</td></tr><tr class="passedeven"><td><a href="#m10">TC3DeleteValidUserID</a></td><td rowspan="1">1714832831822</td><td rowspan="1">592</td></tr><tr class="passedeven"><td><a href="#m11">TC3GetValidUserID</a></td><td rowspan="1">1714832832416</td><td rowspan="1">533</td></tr><tr class="passedeven"><td><a href="#m12">TC48UpdateemailKosong</a></td><td rowspan="1">1714832832950</td><td rowspan="1">609</td></tr><tr class="passedeven"><td><a href="#m13">TC5CreateFirstNameOnly</a></td><td rowspan="1">1714832834105</td><td rowspan="1">508</td></tr><tr class="passedeven"><td><a href="#m14">TC5DeleteInvalidFormatUserID</a></td><td rowspan="1">1714832834615</td><td rowspan="1">471</td></tr><tr class="passedeven"><td><a href="#m15">TC5GETInvalidFormatUserID</a></td><td rowspan="1">1714832835088</td><td rowspan="1">470</td></tr><tr class="passedeven"><td><a href="#m16">TC6DeleteNonExistUserID</a></td><td rowspan="1">1714832835559</td><td rowspan="1">464</td></tr><tr class="passedeven"><td><a href="#m17">TC6GETNonExistUserID</a></td><td rowspan="1">1714832836024</td><td rowspan="1">438</td></tr><tr class="passedeven"><td><a href="#m18">TC7DeleteEmptyUserID</a></td><td rowspan="1">1714832836463</td><td rowspan="1">455</td></tr><tr class="passedeven"><td><a href="#m19">TC8CreateAllFieldsValid</a></td><td rowspan="1">1714832836921</td><td rowspan="1">683</td></tr></tbody>
 </table>
-<h2>APIAutomationTest</h2><h3 id="m0">APITest#test1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
-	at APITest.test1(APITest.java:28)
+<h2>APIAutomationTest</h2><h3 id="m0">APITest#TC04UpdateIDUserTidakValid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [404] but found [400]
+	at APITest.TC04UpdateIDUserTidakValid(APITest.java:322)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">APITest#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">APITest#TC18UpdatefirstNameInvalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (integer) does not match any allowed primitive type (allowed: [&quot;string&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;type&quot;
+    found: &quot;integer&quot;
+    expected: [&quot;string&quot;]
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:123,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC18UpdatefirstNameInvalid(APITest.java:387)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">APITest#TC19UpdatefirstNameKurangDari2Karakter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: string &quot;a&quot; is too short (length: 1, required minimum: 2)
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/E:/POLBAN/SEMESTER%206/Pengujian%20Perangkat%20Lunak/Praktek/Pertemuan%2012/APIAutomationTest/target/test-classes/schema.json#&quot;,&quot;pointer&quot;:&quot;/properties/firstName&quot;}
+    instance: {&quot;pointer&quot;:&quot;/firstName&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;minLength&quot;
+    value: &quot;a&quot;
+    found: 1
+    minLength: 2
+
+  Actual: {&quot;id&quot;:&quot;60d0fe4f5311236168a109cc&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;a&quot;,&quot;lastName&quot;:&quot;Barbosa&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/28.jpg&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;edina.barbosa@example.com&quot;,&quot;dateOfBirth&quot;:&quot;1952-09-03T13:27:29.424Z&quot;,&quot;phone&quot;:&quot;(64) 5796-9260&quot;,&quot;location&quot;:{&quot;street&quot;:&quot;8750, Rua Carlos Gomes&quot;,&quot;city&quot;:&quot;Recife&quot;,&quot;state&quot;:&quot;CearÃ¡&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;timezone&quot;:&quot;+1:00&quot;},&quot;registerDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;,&quot;updatedDate&quot;:&quot;2021-06-21T21:02:07.719Z&quot;}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at APITest.TC19UpdatefirstNameKurangDari2Karakter(APITest.java:417)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">APITest#TC52CreateTimezoneInvalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;}] but found [{&quot;error&quot;:&quot;BODY_NOT_VALID&quot;,&quot;data&quot;:{&quot;email&quot;:&quot;Email already used&quot;}}]
+	at APITest.TC52CreateTimezoneInvalid(APITest.java:299)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">APITest#TC06UpdatefirstNameValid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">APITest#TC14CreateWithExistingData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">APITest#TC1UnauthorizedDelete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">APITest#TC1UnauthorizedGET</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">APITest#TC2InvalidAuthorization</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">APITest#TC3CreateValidRequiredFieldOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">APITest#TC3DeleteValidUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">APITest#TC3GetValidUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">APITest#TC48UpdateemailKosong</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">APITest#TC5CreateFirstNameOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">APITest#TC5DeleteInvalidFormatUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">APITest#TC5GETInvalidFormatUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">APITest#TC6DeleteNonExistUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">APITest#TC6GETNonExistUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">APITest#TC7DeleteEmptyUserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">APITest#TC8CreateAllFieldsValid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
