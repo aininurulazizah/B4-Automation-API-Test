@@ -9,8 +9,15 @@ Tujuan
 
 
 ### Build with / Teknologi ###
+Proyek pengujian API otomatis ini dibangun dengan melibatkan dua library :
+- REST Assure
+- TestNG
 
 ### Prerequisite ###
+Untuk menjalankan proyek pengujian ini, diperlukan beberapa equipment sebagai persiapan environment proyek :
+- Bahasa pemrograman : JDK versi 11
+- Build Tool : Apache Maven
+- IDE : Intellij IDEA
 
 ### Instalasi ###
 1. Clone repository dengan menjalankan perintah
@@ -83,15 +90,57 @@ Untuk melakukan proses eksekusi API testing menggunakan terminal, yaitu:
     mvn test
     ```
 
-#### Class APITest #####
+### Class APITest ####
 Untuk melakukan proses eksekusi API testing ini cukup dengan melakukan running test dengan menekan icon run pada class APITest yang ada pada IDE. 
 
 ### Persiapan Data ###
 Sebelum melakukan eksekusi program dan menjalankan test case, data test perlu dipersiapkan terlebih dahulu, seperti: 
 1. Pastikan memiliki `app-id` yang didapatkan dari website https://dummyapi.io/account 
 2. Pastikan `app-id` yang digunakan valid
-2. Pastikan id user yang digunakan valid saat menguji GET, UPDATE, dan DELETE 
+2. Pastikan id user yang digunakan valid saat menguji GET, UPDATE, dan DELETE
 
+### Fitur Software Under Test ####
+Pengujian dilakukan pada program User Controller pada tautan https://dummyapi.io/docs/user untuk pengujian :
+- Hit API Get User by id (GET)
+- Hit API Create User (POST)
+- Hit API Update User (PUT)
+- Hit API Delete User by id (DELETE)
+
+### Test Case ####
+Pada proyek ini dibuat lima buah test script untuk setiap jenis pengujian (GET, POST, PUT, DELETE) dari keseluruhan test case, sehingga terdapat 20 test case yang diuji secara otomatis dalam proyek ini, diantaranya :
+#### Test Case Get User by id ####
+1. Pengujian get data user tanpa authorization (app-id)
+2. Pengujian get data user dengan invalid authorization
+3. Pengujian get data user dengan id user valid
+4. Pengujian get data user dengan id user invalid (format salah)
+5. Pengujian get data user dengan id user valid tetapi tidak ada di sistem
+#### Test Case Create User ####
+1. Pengujian create data user dengan input field firstName, lastName, dan email yang valid
+2. Pengujian create data user dengan hanya input firstName yang valid
+3. Pengujian create data user dengan input seluruh field data user yang valid
+4. Pengujian create data user dengan input seluruh field data user yang valid, namun data tersebut sudah ada di sistem sebelumnya (email sudah terdaftar)
+5. Pengujian create data user dengan input field timezone invalid (string namun format bukan berupa timezone)
+#### Test Case Update User ####
+1. Pengujian update data user dengan id user valid tetapi tidak ada di sistem
+2. Pengujian update data user pada field firstName dengan nilai yang valid
+3. Pengujian update data user pada field firstName dengan nilai yang invalid (bukan string)
+4. Pengujian update data user pada field firstName dengan jumlah karakter kurang dari 2
+5. Pengujian update data user pada field email dengan value kosong (“”)
+#### Test Case Delete User by id ####
+1. Pengujian delete data user tanpa authorization (app-id)
+2. Pengujian delete data user dengan id user valid
+3. Pengujian delete data user dengan id user invalid (format salah)
+4. Pengujian delete data user dengan id user valid tetapi tidak ada di sistem (sudah dihapus)
+5. Pengujian delete data user tanpa id user
+
+Untuk lebih lengkapnya seluruh test case dapat dilihat pada [Test Cases Design](https://drive.google.com/drive/folders/1NxO9IF7Bv5AmScKJQ-74NCXeIykanb3L?usp=drive_link)
+
+### Author ###
+1. Aini Nurul Azizah (211524034)
+2. Amelia Nathasa (211524036)
+3. Nayara Saffa (211524052)
+
+D4 - Teknik Informatika '21
 
 ### Referensi ###
 - [Maven Documentation](https://maven.apache.org/guides/index.html)
