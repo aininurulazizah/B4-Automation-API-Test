@@ -1,4 +1,4 @@
-### Installation ###
+### Instalasi ###
 1. Clone repository dengan menjalankan perintah
 ```
 git clone https://github.com/aininurulazizah/Test-Automation.git
@@ -27,7 +27,7 @@ Tujuan proyek ini adalah untuk melakukan pengujian API pada web DummyAPI secara 
 - `schema.json` skema JSON yang digunakan untuk memvalidasi data yang diterima dalam format JSON.
 - `schema_id_only.json` memvalidasi respons JSON yang hanya mengandung properti id.
 
-### Reference ###
+### Referensi ###
 - [Maven Documentation](https://maven.apache.org/guides/index.html)
 - [TestNg Documentation](https://www.javadoc.io/doc/org.testng/testng/6.8.17/org/testng/Assert.html)
 - [Rest Assured Documentation](https://rest-assured.io/)
