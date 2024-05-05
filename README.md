@@ -135,6 +135,11 @@ Pada proyek ini dibuat lima buah test script untuk setiap jenis pengujian (GET, 
 
 Untuk lebih lengkapnya seluruh test case dapat dilihat pada [Test Cases Design](https://drive.google.com/drive/folders/1NxO9IF7Bv5AmScKJQ-74NCXeIykanb3L?usp=drive_link)
 
+### Mengakses Test Report ###
+Untuk melihat test report hasil pengujian dapat diakses melalui direktori : 
+`\test-output\index.html`
+- **Catatan Penting:** Ketika menjalankan pengujian otomatis, seharusnya terdapat empat kasus pengujian yang mengalami kegagalan (FAIL). Namun, jika pengujian dijalankan ulang, beberapa kasus yang seharusnya berhasil (PASS) akan tercatat sebagai gagal. Ini disebabkan kondisi dimana alat email telah digunakan sebelumnya atau ID user telah dihapus dari database. Oleh karena itu, total kasus yang gagal dapat mencapai tujuh saat dijalankan ulang, meskipun sebenarnya hanya empat kasus yang gagal pada saat pengujian pertama.
+
 ### Author ###
 1. Aini Nurul Azizah (211524034)
 2. Amelia Nathasa (211524036)
